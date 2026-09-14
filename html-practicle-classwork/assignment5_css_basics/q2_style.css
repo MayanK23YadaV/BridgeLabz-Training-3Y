@@ -1,0 +1,110 @@
+/* CSS Basics Q2 - Multi-section Informational Webpage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: #ffffff;
+    background-color: #111827;
+}
+
+.header {
+    background: #1f2937;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 2px solid #374151;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.header p {
+    color: #9ca3af;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: #111827;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color: #f3f4f6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #60a5fa;
+}
+
+/* Full Width Sections */
+.section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.content-box {
+    background: rgba(17, 24, 39, 0.85);
+    padding: 3rem;
+    border-radius: 20px;
+    max-width: 700px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.content-box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Parallax Background Fixed Attachment */
+.parallax-bg1 {
+    background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-bg2 {
+    background-image: url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1200&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Linear & Radial Gradients */
+.linear-grad {
+    background: linear-gradient(135deg, #1e1b4b, #312e81, #4338ca);
+}
+
+.radial-grad {
+    background: radial-gradient(circle at center, #831843, #701a75, #4c1d95);
+}
+
+.footer {
+    background: #030712;
+    text-align: center;
+    padding: 1.5rem;
+    color: #6b7280;
+}

@@ -1,0 +1,56 @@
+/* CSS Basics Q9 - Newspaper Magazine Column Structure */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Serif Pro', serif;
+    background-color: #fcfbf7;
+    color: #111111;
+    padding: 3rem 1.5rem;
+}
+
+.newspaper-container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 3rem;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.main-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    border-bottom: 3px double #111111;
+    border-top: 1px solid #111111;
+    padding: 1rem 0;
+}
+
+/* 3 Vertical Text Columns using column-count and column-gap */
+.article-columns {
+    column-count: 3;
+    column-gap: 2rem;
+    column-rule: 1px solid #e5e7eb;
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* Left Floated Image */
+.floated-image {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border: 1px solid #9ca3af;
+}
+
+.article-columns p {
+    margin-bottom: 1rem;
+}

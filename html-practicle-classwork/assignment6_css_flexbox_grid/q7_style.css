@@ -1,0 +1,47 @@
+/* Flexbox & Grid Q7 - CSS Loading Animation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a;
+    min-height: 100vh;
+}
+
+/* Center animation using Flexbox */
+.loader-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: flex;
+    gap: 1rem;
+}
+
+.dot {
+    width: 24px;
+    height: 24px;
+    background-color: #38bdf8;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+}
+
+/* Keyframes translateY animation */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+/* Delay for each dot */
+.dot1 { animation-delay: 0s; }
+.dot2 { animation-delay: 0.2s; }
+.dot3 { animation-delay: 0.4s; }

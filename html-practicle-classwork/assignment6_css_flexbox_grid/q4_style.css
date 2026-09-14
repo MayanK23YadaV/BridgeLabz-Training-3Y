@@ -1,0 +1,85 @@
+/* Flexbox & Grid Q4 - Dashboard Layout using CSS Grid */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+/* Header spans across top */
+.header {
+    grid-column: 1 / -1;
+    background: #1e293b;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid #334155;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    color: #38bdf8;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #1e293b;
+    border-right: 1px solid #334155;
+    padding: 2rem 1rem;
+}
+
+.side-nav a {
+    display: block;
+    color: #94a3b8;
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.side-nav a:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+/* Main Content Grid 2x2 */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem; /* grid-gap requirement */
+    padding: 2rem;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+.span-2 {
+    grid-column: span 2; /* Requirement: One box spans 2 columns */
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    border-color: #38bdf8;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 0.8rem;
+}

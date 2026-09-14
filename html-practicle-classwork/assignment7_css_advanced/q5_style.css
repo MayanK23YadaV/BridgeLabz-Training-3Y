@@ -1,0 +1,96 @@
+/* Advanced CSS Q5 - CSS Selectors Showcase */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 3rem 1rem;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #1e293b;
+    padding: 2.5rem;
+    border-radius: 16px;
+}
+
+h1 {
+    color: #38bdf8;
+    margin-bottom: 1.5rem;
+}
+
+/* 1. Attribute Selectors */
+input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: #ffffff;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+a[href^="https"] {
+    display: inline-block;
+    color: #38bdf8;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* 2. Pseudo-Classes (:hover, :focus, :nth-child()) */
+input[type="text"]:focus {
+    border-color: #38bdf8;
+    outline: none;
+}
+
+.item-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.item-list li {
+    padding: 0.8rem;
+    background: #0f172a;
+    margin-bottom: 0.4rem;
+    border-radius: 6px;
+}
+
+/* nth-child selector */
+.item-list li:nth-child(even) {
+    background: #1e1b4b;
+}
+
+/* 3. Pseudo-Elements (::before, ::after) */
+.item-list li::before {
+    content: "➔ ";
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.external-link::after {
+    content: " ↗";
+}
+
+/* 4. Combinators (>, +, ~, descendant) */
+/* Direct child combinator (>) */
+.parent-box > p {
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+/* Adjacent sibling (+ combinator) */
+h2 + p {
+    margin-top: 0.5rem;
+}
+
+/* General sibling (~ combinator) */
+.sibling ~ p {
+    font-style: italic;
+    color: #94a3b8;
+}

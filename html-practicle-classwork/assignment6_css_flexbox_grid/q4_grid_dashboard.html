@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 - CSS Grid Dashboard</title>
+    <link rel="stylesheet" href="q4_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Header spans top across all columns -->
+        <header class="header">
+            <h1>Analytics Control Center</h1>
+        </header>
+
+        <!-- Sidebar left vertical nav -->
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <a href="#">Overview</a>
+                <a href="#">Performance</a>
+                <a href="#">Logs</a>
+                <a href="#">Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content with 4 boxes -->
+        <main class="main-content">
+            <!-- Spans 2 columns -->
+            <div class="card span-2">
+                <h3>Primary System Telemetry</h3>
+                <p>Monitored 1.2M API transactions with zero fault degradation across cloud zones.</p>
+            </div>
+
+            <div class="card">
+                <h3>CPU Utilization</h3>
+                <p>Average 24% load.</p>
+            </div>
+
+            <div class="card">
+                <h3>Memory Allocation</h3>
+                <p>8.4 GB / 32 GB utilized.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

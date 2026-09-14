@@ -1,0 +1,139 @@
+/* CSS Basics Q5 - Pricing Table */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0b132b;
+    color: #ffffff;
+    padding: 3rem 1rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    color: #6fffe9;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+/* 3 Equal Columns via Flexbox */
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: stretch; /* Maintains equal height */
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background: #1c2541;
+    border: 2px solid #3a506b;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    flex: 1;
+    min-width: 280px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Hover Effect: Enlarges box & changes background color */
+.plan-card:hover {
+    transform: scale(1.05);
+    background-color: #2a3a5e;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.plan-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #6fffe9;
+    margin-bottom: 1.5rem;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #a0aec0;
+    font-weight: 400;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.features li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #cbd5e1;
+    font-size: 0.95rem;
+}
+
+/* Styled link button */
+.btn {
+    display: block;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+.btn-basic, .btn-premium {
+    background: #3a506b;
+    color: #ffffff;
+}
+
+.popular-plan {
+    border-color: #6fffe9;
+    background: #1e2d4a;
+}
+
+.badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #6fffe9;
+    color: #0b132b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.3rem 0.9rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+}
+
+.btn-popular {
+    background: #6fffe9;
+    color: #0b132b;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}

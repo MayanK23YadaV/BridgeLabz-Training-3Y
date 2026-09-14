@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q8 - Customer Feedback Form</title>
+</head>
+<body>
+    <header>
+        <h1>Service & Course Feedback Form</h1>
+    </header>
+    <main>
+        <form method="post" action="#">
+            <p>
+                <label>Overall Experience Rating:</label><br>
+                <input type="radio" id="good" name="rating" value="Good" checked>
+                <label for="good">Good</label><br>
+                
+                <input type="radio" id="average" name="rating" value="Average">
+                <label for="average">Average</label><br>
+                
+                <input type="radio" id="poor" name="rating" value="Poor">
+                <label for="poor">Poor</label>
+            </p>
+
+            <p>
+                <label for="feedback">Detailed Comments & Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="5" cols="40" placeholder="Type your feedback here..."></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Submit Feedback">
+            </p>
+        </form>
+    </main>
+</body>
+</html>

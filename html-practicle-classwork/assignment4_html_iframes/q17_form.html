@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q17 - Form Targeting Iframe</title>
+</head>
+<body>
+    <header>
+        <h1>Submit Form to Iframe</h1>
+    </header>
+    <main>
+        <form action="q17_result.html" method="get" target="response_frame">
+            <p>
+                <label for="username">Enter Your Name:</label><br>
+                <input type="text" id="username" name="username" required>
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+
+        <h2>Response Window:</h2>
+        <iframe name="response_frame" width="100%" height="150" title="Response Target Window" style="border: 1px dashed gray;"></iframe>
+    </main>
+</body>
+</html>

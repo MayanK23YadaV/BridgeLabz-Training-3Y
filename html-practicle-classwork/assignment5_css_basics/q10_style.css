@@ -1,0 +1,198 @@
+/* CSS Basics Q10 - Complete Webpage Masterclass Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #f8fafc;
+    background-color: #0b0f19;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Sticky Header Navigation */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background: rgba(11, 15, 25, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section with Large Background Image & Centered Text */
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background-image: linear-gradient(rgba(11, 15, 25, 0.7), rgba(11, 15, 25, 0.7)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1400&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ffffff, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* About Section (2 Columns) */
+.about-section {
+    padding: 5rem 0;
+    background-color: #0f172a;
+}
+
+.two-col {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.about-img-wrap {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-img-wrap img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Services Section (3 Boxes Row) */
+.services-section {
+    padding: 5rem 0;
+    background-color: #0b0f19;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.services-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 2.5rem 1.8rem;
+    flex: 1;
+    min-width: 260px;
+    outline: 1px solid transparent;
+    transition: outline 0.3s, transform 0.3s;
+}
+
+.service-box:hover {
+    outline: 1px solid #38bdf8;
+    transform: translateY(-5px);
+}
+
+.service-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #38bdf8;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 5rem 0;
+    background-color: #0f172a;
+}
+
+.simple-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.simple-form input,
+.simple-form textarea {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0b0f19;
+    color: #ffffff;
+    font-family: inherit;
+}
+
+.simple-form button {
+    padding: 0.9rem;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: #030712;
+    color: #64748b;
+    font-size: 0.9rem;
+}

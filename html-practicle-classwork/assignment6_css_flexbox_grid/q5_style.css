@@ -1,0 +1,97 @@
+/* Flexbox & Grid Q5 - Pricing Section with Keyframes Fade-in */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 3rem 1rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+}
+
+/* @keyframes Fade-in animation on load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-out;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 16px;
+    padding: 2.5rem 1.8rem;
+    flex: 1;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+/* Hover: cards rise up transform: translateY(-10px) */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.middle-card {
+    background: #1e1b4b;
+    border: 2px solid #818cf8;
+    padding: 3rem 2rem; /* slightly larger */
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #818cf8;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.2rem 0.8rem;
+    border-radius: 999px;
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #38bdf8;
+    margin: 1rem 0;
+}
+
+/* Collapse vertically below 750px */
+@media (max-width: 750px) {
+    .pricing-container {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
+}

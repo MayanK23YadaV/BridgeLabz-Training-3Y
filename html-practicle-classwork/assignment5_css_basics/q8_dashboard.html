@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8 - Analytics Dashboard Layout</title>
+    <link rel="stylesheet" href="q8_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fixed Top Header -->
+    <header class="top-header">
+        <div class="logo">CloudConsole</div>
+        <div class="user-profile">Admin User</div>
+    </header>
+
+    <div class="dashboard-body">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <a href="#" class="active">Overview</a>
+                <a href="#">Analytics</a>
+                <a href="#">Servers</a>
+                <a href="#">Database</a>
+                <a href="#">Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <h2>System Status Overview</h2>
+            <div class="card-grid">
+                <div class="content-box">
+                    <h3>Active Server Nodes</h3>
+                    <p class="stat">99.98%</p>
+                    <p class="desc">16 active nodes operating in US-East zone without latency bottlenecks.</p>
+                </div>
+
+                <div class="content-box">
+                    <h3>Network Throughput</h3>
+                    <p class="stat">4.2 GB/s</p>
+                    <p class="desc">Real-time data streaming metrics across API gateway services.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

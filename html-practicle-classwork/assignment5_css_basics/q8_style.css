@@ -1,0 +1,133 @@
+/* CSS Basics Q8 - Dashboard Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+/* Fixed Header */
+.top-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #1e293b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border-bottom: 1px solid #334155;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.dashboard-body {
+    display: flex;
+    margin-top: 60px; /* offset for fixed header */
+    min-height: calc(100vh - 60px);
+}
+
+/* Full Screen Height Sidebar */
+.sidebar {
+    width: 240px;
+    background: #1e293b;
+    border-right: 1px solid #334155;
+    padding: 2rem 1rem;
+    flex-shrink: 0;
+}
+
+.side-nav a {
+    display: block;
+    color: #94a3b8;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+
+.side-nav a.active,
+.side-nav a:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+/* Main Area */
+.main-content {
+    flex: 1;
+    padding: 2.5rem;
+}
+
+.main-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.content-box {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 2rem;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.content-box h3 {
+    color: #94a3b8;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: 0.8rem;
+}
+
+.desc {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+/* Responsive Stacking on Mobile Screens */
+@media (max-width: 768px) {
+    .dashboard-body {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #334155;
+    }
+    .side-nav {
+        display: flex;
+        overflow-x: auto;
+    }
+    .side-nav a {
+        margin-bottom: 0;
+        margin-right: 0.5rem;
+        white-space: nowrap;
+    }
+}

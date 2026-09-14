@@ -1,0 +1,61 @@
+/* Advanced CSS Q2 - Height and Width Practice Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0b132b;
+    color: #ffffff;
+}
+
+/* Center all boxes vertically and horizontally using Flexbox */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.box {
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Distinct background colors & units */
+.box1 {
+    width: 250px;
+    min-height: 200px;
+    background: #1c2541;
+    border: 2px solid #3a506b;
+}
+
+.box2 {
+    max-width: 350px;
+    height: 30vh;
+    background: #3a506b;
+    overflow: auto; /* overflow property demonstration */
+}
+
+.box3 {
+    width: 20em;
+    height: 15rem;
+    background: #5bc0be;
+    color: #0b132b;
+}
+
+.overflow-text {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}

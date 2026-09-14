@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10 - Master CSS Webpage Layout</title>
+    <link rel="stylesheet" href="q10_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Header Navigation -->
+    <header class="sticky-nav">
+        <div class="logo">AuraStudio</div>
+        <nav class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-content">
+            <h1>Designing the Future of the Web</h1>
+            <p>We combine modern box model mechanics, flexbox alignment, and sleek gradients to deliver stunning user experiences.</p>
+        </div>
+    </section>
+
+    <!-- About Section (2 Columns) -->
+    <section class="about-section" id="about">
+        <div class="container two-col">
+            <div class="about-text">
+                <h2>About Our Craft</h2>
+                <p>We believe in clean code, semantic HTML5, and responsive CSS architecture. Every pixel is calculated to provide seamless user interaction across desktop and mobile devices.</p>
+            </div>
+            <div class="about-img-wrap">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Team Work">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (3 Boxes Row) -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-row">
+                <div class="service-box">
+                    <h3>Web Architecture</h3>
+                    <p>Building high-speed enterprise web platforms with modern CSS grid &amp; flexbox layouts.</p>
+                </div>
+                <div class="service-box">
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive interfaces with custom typography, gradients, and micro-interactions.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Performance Audit</h3>
+                    <p>Optimizing page load speeds, memory usage, and responsive rendering benchmarks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <form class="simple-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 AuraStudio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

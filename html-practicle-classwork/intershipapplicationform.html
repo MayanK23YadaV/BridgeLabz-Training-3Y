@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+</head>
+
+<body>
+
+    <h1>Internship Application Form</h1>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="" disabled selected>Select Course</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+            <option value="Mechanical">Mechanical</option>
+        </select>
+        <br><br>
+
+        <label>Skills:</label>
+        <input type="checkbox" id="skillJava" name="skills" value="Java">
+        <label for="skillJava">Java</label>
+        <input type="checkbox" id="skillJS" name="skills" value="JavaScript">
+        <label for="skillJS">JavaScript</label>
+        <input type="checkbox" id="skillHTML" name="skills" value="HTML">
+        <label for="skillHTML">HTML</label>
+        <input type="checkbox" id="skillCSS" name="skills" value="CSS">
+        <label for="skillCSS">CSS</label>
+        <input type="checkbox" id="skillReact" name="skills" value="React">
+        <label for="skillReact">React</label>
+        <br><br>
+
+        <label>Internship Preference:</label>
+        <input type="radio" id="prefRemote" name="preference" value="Work From Home" required>
+        <label for="prefRemote">Work From Home</label>
+        <input type="radio" id="prefInOffice" name="preference" value="In-Office">
+        <label for="prefInOffice">In-Office</label>
+        <input type="radio" id="prefHybrid" name="preference" value="Hybrid">
+        <label for="prefHybrid">Hybrid</label>
+        <br><br>
+
+        <label for="resume">Resume Upload:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        <br><br>
+
+        <label for="coverLetter">Cover Letter:</label><br>
+        <textarea id="coverLetter" name="coverLetter" rows="5" cols="40"
+            placeholder="Write your cover letter here..."></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+/* Advanced CSS Q6 - CSS Transformations Showcase */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 4rem 1rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Arrange boxes horizontally using Flexbox */
+.box-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.box-wrap {
+    text-align: center;
+}
+
+.box {
+    width: 140px;
+    height: 140px;
+    background: #1e293b;
+    border: 2px solid #38bdf8;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #38bdf8;
+
+    /* Transition requirement */
+    transition: all 0.4s ease;
+}
+
+.label {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* Hover Transformations */
+.tf-rotate:hover {
+    transform: rotate(15deg);
+}
+
+.tf-scale:hover {
+    transform: scale(1.2);
+}
+
+.tf-translate:hover {
+    transform: translateY(-15px);
+}
+
+.tf-skew:hover {
+    transform: skewX(-15deg);
+}

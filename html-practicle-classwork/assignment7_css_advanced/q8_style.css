@@ -1,0 +1,86 @@
+/* Advanced CSS Q8 - Box Model Exploration */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 3rem 1rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    color: #38bdf8;
+}
+
+/* Center demonstration using Flexbox */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+/* Layered Box Model Visual Representation */
+.margin-layer {
+    background: rgba(239, 68, 68, 0.2);
+    border: 2px dashed #ef4444;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.border-layer {
+    background: rgba(245, 158, 11, 0.2);
+    outline: 2px solid #f59e0b;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.padding-layer {
+    background: rgba(16, 185, 129, 0.2);
+    border: 2px dotted #10b981;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.content-layer {
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.explanation {
+    max-width: 600px;
+    background: #1e293b;
+    padding: 1.8rem;
+    border-radius: 12px;
+}
+
+.explanation h2 {
+    color: #38bdf8;
+    margin-bottom: 0.8rem;
+}
+
+.explanation p {
+    margin-bottom: 0.8rem;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+}

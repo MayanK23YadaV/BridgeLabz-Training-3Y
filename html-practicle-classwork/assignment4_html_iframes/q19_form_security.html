@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q19 - Form Security Attributes</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Form Security Attributes</h1>
+    </header>
+    <main>
+        <form action="#" method="post" autocomplete="off">
+            <p>
+                <label for="sensitive_data">Sensitive Access Key:</label><br>
+                <input type="text" id="sensitive_data" name="sensitive_data" required>
+            </p>
+            <p>
+                <label for="pin">Security PIN:</label><br>
+                <input type="password" id="pin" name="pin" required>
+            </p>
+            <p>
+                <input type="submit" value="Submit Securely">
+            </p>
+        </form>
+
+        <h2>Security Note on Autocomplete="off":</h2>
+        <p>
+            Turning off browser autocomplete using <code>autocomplete="off"</code> prevents the web browser from caching sensitive values (like passwords, credit card numbers, or PINs) in local history or auto-fill caches. This reduces security risks on shared, public, or compromised devices.
+        </p>
+    </main>
+</body>
+</html>
