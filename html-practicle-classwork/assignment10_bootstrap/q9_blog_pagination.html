@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Pagination & Pager</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="q9_style.css">
+</head>
+<body class="bg-dark text-light">
+
+  <header class="py-4 border-bottom border-secondary text-center">
+    <div class="container">
+      <h1 class="fw-bold text-info">Developer Blog Posts</h1>
+      <p class="text-secondary">Articles, tutorials, and deep dives into modern web engineering.</p>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    
+    <!-- Blog Post Feed -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8">
+        
+        <article class="card bg-secondary text-light border-0 shadow mb-4">
+          <div class="card-body p-4">
+            <span class="badge bg-info text-dark mb-2">CSS Architecture</span>
+            <h3 class="fw-bold text-white">Understanding Bootstrap 5 Utility Classes</h3>
+            <p class="text-light opacity-75">Explore how margin, padding, flexbox, and color utilities speed up rapid frontend development without writing custom CSS rules.</p>
+            <div class="text-secondary small">Published Sep 22, 2026 &bull; 4 min read</div>
+          </div>
+        </article>
+
+        <article class="card bg-secondary text-light border-0 shadow mb-4">
+          <div class="card-body p-4">
+            <span class="badge bg-warning text-dark mb-2">Performance</span>
+            <h3 class="fw-bold text-white">Optimizing Responsive Web Assets</h3>
+            <p class="text-light opacity-75">How to leverage SVG data URIs, WebP formats, and CSS grid to achieve perfect 100 Lighthouse performance scores.</p>
+            <div class="text-secondary small">Published Sep 18, 2026 &bull; 6 min read</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Bootstrap .pagination component centered using .justify-content-center requirement -->
+    <nav aria-label="Blog Page Navigation" class="mb-4">
+      <ul class="pagination pagination-dark justify-content-center mb-0">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Simple Pager with Older Posts and Newer Posts requirement -->
+    <div class="d-flex justify-content-between max-w-700 mx-auto pt-3 border-top border-secondary" style="max-width: 700px;">
+      <button class="btn btn-outline-secondary fw-bold px-4">&larr; Older Posts</button>
+      <button class="btn btn-outline-secondary fw-bold px-4">Newer Posts &rarr;</button>
+    </div>
+
+  </main>
+
+  <footer class="text-center py-4 border-top border-secondary text-secondary mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Developer Blog - Assignment 10 Question 9</p>
+    </div>
+  </footer>
+
+</body>
+</html>

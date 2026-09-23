@@ -1,0 +1,15 @@
+/* Pricing card transition & hover shadow requirement */
+.pricing-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 35px rgba(13, 202, 240, 0.3) !important;
+}
+
+.pro-highlight:hover {
+  box-shadow: 0 20px 40px rgba(13, 110, 253, 0.4) !important;
+}

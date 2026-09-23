@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu Page - Bootstrap CSS Components</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="q4_style.css">
+</head>
+<body class="bg-dark text-light">
+
+  <header class="py-4 text-center border-bottom border-secondary">
+    <div class="container">
+      <h1 class="display-4 fw-bold text-warning">Gourmet Bistro</h1>
+      <!-- .text-center and .lead typography requirement -->
+      <p class="lead text-secondary text-center">Serving authentic artisanal cuisine crafted with fresh organic ingredients.</p>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <div class="row g-4">
+      
+      <!-- Food Image with Caption -->
+      <div class="col-lg-5">
+        <div class="card bg-secondary text-light border-0 shadow">
+          <!-- .img-fluid food image requirement -->
+          <img class="img-fluid rounded-top" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='500' height='350' viewBox='0 0 500 350'><rect width='500' height='350' fill='%2378350f'/><circle cx='250' cy='175' r='110' fill='%23f59e0b'/><circle cx='250' cy='175' r='80' fill='%23b45309'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='22'>Signature Truffle Pasta</text></svg>" alt="Signature Truffle Pasta">
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-warning">Signature Truffle Pasta</h5>
+            <p class="small text-light mb-0">Handmade fettuccine tossed in black truffle cream and aged Parmigiano Reggiano.</p>
+          </div>
+        </div>
+
+        <!-- List Group for Chef's Specials requirement -->
+        <div class="mt-4">
+          <h4 class="fw-bold text-warning mb-3">Chef's Specials</h4>
+          <ul class="list-group list-group-flush rounded-3 shadow-sm">
+            <li class="list-group-item bg-secondary text-light d-flex justify-content-between align-items-center">
+              <span>🌟 Wood-Fired Filet Mignon</span>
+              <span class="badge bg-warning text-dark fw-bold">$42.00</span>
+            </li>
+            <li class="list-group-item bg-secondary text-light d-flex justify-content-between align-items-center">
+              <span>🌟 Pan-Seared Chilean Sea Bass</span>
+              <span class="badge bg-warning text-dark fw-bold">$38.00</span>
+            </li>
+            <li class="list-group-item bg-secondary text-light d-flex justify-content-between align-items-center">
+              <span>🌟 Artisanal Burrata Caprese</span>
+              <span class="badge bg-warning text-dark fw-bold">$19.00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Menu Items Table -->
+      <div class="col-lg-7">
+        <h2 class="fw-bold text-warning mb-4">Today's Menu</h2>
+        <!-- Bootstrap Table requirement -->
+        <div class="table-responsive">
+          <table class="table table-dark table-hover table-bordered align-middle">
+            <thead class="table-warning text-dark fw-bold">
+              <tr>
+                <th>Category</th>
+                <th>Item Name</th>
+                <th>Description</th>
+                <th class="text-end">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Appetizer</td>
+                <td class="fw-bold">Bruschetta Al Pomodoro</td>
+                <td class="small opacity-75">Grilled sourdough, vine tomatoes, fresh basil.</td>
+                <td class="text-end fw-bold text-warning">$12.50</td>
+              </tr>
+              <tr>
+                <td>Appetizer</td>
+                <td class="fw-bold">Calamari Fritti</td>
+                <td class="small opacity-75">Crispy fried calamari with spicy marinara.</td>
+                <td class="text-end fw-bold text-warning">$15.00</td>
+              </tr>
+              <tr>
+                <td>Main Course</td>
+                <td class="fw-bold">Ribeye Steak 12oz</td>
+                <td class="small opacity-75">USDA Prime beef served with rosemary potatoes.</td>
+                <td class="text-end fw-bold text-warning">$36.00</td>
+              </tr>
+              <tr>
+                <td>Main Course</td>
+                <td class="fw-bold">Wild Salmon Risotto</td>
+                <td class="small opacity-75">Creamy Arborio rice, grilled salmon, asparagus.</td>
+                <td class="text-end fw-bold text-warning">$29.00</td>
+              </tr>
+              <tr>
+                <td>Dessert</td>
+                <td class="fw-bold">Classic Tiramisu</td>
+                <td class="small opacity-75">Espresso-soaked ladyfingers, mascarpone cream.</td>
+                <td class="text-end fw-bold text-warning">$9.50</td>
+              </tr>
+              <tr>
+                <td>Dessert</td>
+                <td class="fw-bold">Panna Cotta</td>
+                <td class="small opacity-75">Vanilla bean custard with berry coulis.</td>
+                <td class="text-end fw-bold text-warning">$8.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="text-center py-4 border-top border-secondary text-secondary">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Gourmet Bistro - Assignment 10 Question 4</p>
+    </div>
+  </footer>
+
+</body>
+</html>

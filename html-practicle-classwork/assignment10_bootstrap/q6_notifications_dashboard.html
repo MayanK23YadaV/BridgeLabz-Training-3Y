@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications Dashboard - Alerts & Wells</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="q6_style.css">
+</head>
+<body class="bg-dark text-light">
+
+  <header class="py-4 border-bottom border-secondary text-center">
+    <div class="container">
+      <h1 class="fw-bold text-info">Notifications Center</h1>
+      <p class="text-secondary">System alerts, info updates, and security warnings.</p>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        
+        <!-- Bootstrap .card grouping requirement -->
+        <div class="card bg-secondary text-light border-0 shadow-lg p-4 rounded-4">
+          <h3 class="fw-bold text-white mb-4">Active Notifications</h3>
+
+          <!-- Alert 1: Success (New Message) with .alert-dismissible -->
+          <div class="alert alert-success alert-dismissible fade show border-0 shadow-sm mb-3" role="alert">
+            <h5 class="alert-heading fw-bold mb-1">✅ New Message Received!</h5>
+            <p class="mb-0 small">You have received 3 new code review requests from the QA engineering team.</p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
+          <!-- Alert 2: Info (Tip) with .alert-dismissible -->
+          <div class="alert alert-info alert-dismissible fade show border-0 shadow-sm mb-3" role="alert">
+            <h5 class="alert-heading fw-bold mb-1">💡 Pro Tip for Productivity</h5>
+            <p class="mb-0 small">Keyboard shortcut Ctrl+Shift+P opens the global command launcher instantly.</p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
+          <!-- Alert 3: Danger (Warning) with .alert-dismissible -->
+          <div class="alert alert-danger alert-dismissible fade show border-0 shadow-sm mb-4" role="alert">
+            <h5 class="alert-heading fw-bold mb-1">⚠️ Security Warning</h5>
+            <p class="mb-0 small">Unrecognized login attempt detected from IP 192.168.1.45. Please verify 2FA setup.</p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
+          <!-- Summary Well: Bordered, padded .bg-light section requirement -->
+          <div class="summary-well bg-light text-dark p-4 rounded-3 border border-2 border-info">
+            <h4 class="fw-bold text-dark mb-2">Notification Summary Well</h4>
+            <p class="mb-2 text-secondary">All system logs are archived daily. Dismissing an alert removes it from active view.</p>
+            <div class="d-flex gap-3">
+              <span class="badge bg-success">1 Success</span>
+              <span class="badge bg-info text-dark">1 Tip</span>
+              <span class="badge bg-danger">1 Warning</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 border-top border-secondary text-secondary">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Notifications Dashboard - Assignment 10 Question 6</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS CDN for Dismissible Alerts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

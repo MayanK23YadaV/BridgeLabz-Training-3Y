@@ -1,0 +1,15 @@
+/* Carousel image height constraint and caption overlay styling */
+.carousel-item img {
+  height: 450px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.progress {
+  border-radius: 12px;
+  overflow: hidden;
+}

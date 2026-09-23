@@ -1,0 +1,9 @@
+/* Table and list-group custom border tweaks */
+.table-warning {
+  background-color: #f59e0b !important;
+  color: #0f172a !important;
+}
+
+.list-group-item {
+  border-color: #475569;
+}

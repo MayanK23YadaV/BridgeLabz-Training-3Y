@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog - Bootstrap Grid System</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="q3_style.css">
+</head>
+<body class="bg-dark text-light">
+
+  <header class="py-4 border-bottom border-secondary text-center">
+    <div class="container">
+      <h1 class="fw-bold text-info">TechStore Gear Catalog</h1>
+      <p class="text-secondary">Explore high-performance developer peripherals and gadgets.</p>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <!-- Bootstrap .row requirement -->
+      <div class="row g-4">
+        
+        <!-- Product 1: .col-12 for mobile, .col-sm-6 for tablet (2 col), .col-md-3 for desktop (4 col) -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100 bg-secondary text-light border-0 shadow-sm product-card">
+            <img class="card-img-top p-3 bg-dark rounded-top" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='250' height='180' viewBox='0 0 250 180'><rect width='250' height='180' fill='%231e293b'/><rect x='40' y='30' width='170' height='120' rx='10' fill='%230284c7'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='16'>Mechanical Keyboard</text></svg>" alt="Mechanical Keyboard">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="card-title fw-bold text-white">RGB Mechanical Keyboard</h5>
+                <p class="card-text text-light opacity-75 small">Tactile mechanical switches with customizable per-key RGB backlighting.</p>
+              </div>
+              <div class="mt-3">
+                <div class="h5 fw-bold text-info mb-3">$129.99</div>
+                <button class="btn btn-info w-100 fw-bold">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100 bg-secondary text-light border-0 shadow-sm product-card">
+            <img class="card-img-top p-3 bg-dark rounded-top" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='250' height='180' viewBox='0 0 250 180'><rect width='250' height='180' fill='%231e293b'/><circle cx='125' cy='90' r='55' fill='%237c3aed'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='16'>Ergonomic Mouse</text></svg>" alt="Ergonomic Mouse">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="card-title fw-bold text-white">Wireless Precision Mouse</h5>
+                <p class="card-text text-light opacity-75 small">Ultra-fast 26K DPI optical sensor with ergonomic thumb rest.</p>
+              </div>
+              <div class="mt-3">
+                <div class="h5 fw-bold text-info mb-3">$79.99</div>
+                <button class="btn btn-info w-100 fw-bold">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100 bg-secondary text-light border-0 shadow-sm product-card">
+            <img class="card-img-top p-3 bg-dark rounded-top" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='250' height='180' viewBox='0 0 250 180'><rect width='250' height='180' fill='%231e293b'/><rect x='30' y='20' width='190' height='140' rx='8' fill='%23059669'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='16'>4K Monitor</text></svg>" alt="4K Monitor">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="card-title fw-bold text-white">27-inch 4K IPS Monitor</h5>
+                <p class="card-text text-light opacity-75 small">UHD resolution with 99% sRGB color gamut and USB-C power delivery.</p>
+              </div>
+              <div class="mt-3">
+                <div class="h5 fw-bold text-info mb-3">$399.99</div>
+                <button class="btn btn-info w-100 fw-bold">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100 bg-secondary text-light border-0 shadow-sm product-card">
+            <img class="card-img-top p-3 bg-dark rounded-top" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='250' height='180' viewBox='0 0 250 180'><rect width='250' height='180' fill='%231e293b'/><circle cx='125' cy='90' r='50' fill='%23ea580c'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='16'>ANC Headset</text></svg>" alt="ANC Headset">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="card-title fw-bold text-white">Noise Canceling Headset</h5>
+                <p class="card-text text-light opacity-75 small">Active noise cancellation with studio-grade spatial audio drivers.</p>
+              </div>
+              <div class="mt-3">
+                <div class="h5 fw-bold text-info mb-3">$199.99</div>
+                <button class="btn btn-info w-100 fw-bold">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 border-top border-secondary text-secondary">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 TechStore - Assignment 10 Question 3</p>
+    </div>
+  </footer>
+
+</body>
+</html>
