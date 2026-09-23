@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Filter Gallery</title>
+  <link rel="stylesheet" href="q1_responsive_image_filter_gallery.css">
+</head>
+<body>
+  <header>
+    <h1>Responsive Image Filter Gallery</h1>
+    <p>Demonstrating CSS grid & filter effects (blur, grayscale, sepia, brightness, contrast, hue-rotate).</p>
+  </header>
+
+  <main>
+    <section class="gallery-grid">
+      <!-- Image 1: Blur -->
+      <figure class="filter-card">
+        <img class="filter-blur" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='220' viewBox='0 0 300 220'><rect width='300' height='220' fill='%230284c7'/><circle cx='150' cy='110' r='70' fill='%2338bdf8'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='20'>Blur Filter</text></svg>" alt="Blur Example">
+        <figcaption>CSS Filter: blur(4px)</figcaption>
+      </figure>
+
+      <!-- Image 2: Grayscale -->
+      <figure class="filter-card">
+        <img class="filter-grayscale" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='220' viewBox='0 0 300 220'><rect width='300' height='220' fill='%23e11d48'/><polygon points='150,30 250,190 50,190' fill='%23fb7185'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='20'>Grayscale Filter</text></svg>" alt="Grayscale Example">
+        <figcaption>CSS Filter: grayscale(100%)</figcaption>
+      </figure>
+
+      <!-- Image 3: Sepia -->
+      <figure class="filter-card">
+        <img class="filter-sepia" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='220' viewBox='0 0 300 220'><rect width='300' height='220' fill='%23059669'/><rect x='60' y='40' width='180' height='140' fill='%2334d399'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='20'>Sepia Filter</text></svg>" alt="Sepia Example">
+        <figcaption>CSS Filter: sepia(100%)</figcaption>
+      </figure>
+
+      <!-- Image 4: Brightness -->
+      <figure class="filter-card">
+        <img class="filter-brightness" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='220' viewBox='0 0 300 220'><rect width='300' height='220' fill='%237c3aed'/><circle cx='100' cy='110' r='50' fill='%23c084fc'/><circle cx='200' cy='110' r='50' fill='%23e9d5ff'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='20'>Brightness Filter</text></svg>" alt="Brightness Example">
+        <figcaption>CSS Filter: brightness(150%)</figcaption>
+      </figure>
+
+      <!-- Image 5: Contrast -->
+      <figure class="filter-card">
+        <img class="filter-contrast" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='220' viewBox='0 0 300 220'><rect width='300' height='220' fill='%23ea580c'/><path d='M30,110 Q150,10 270,110 T30,110' fill='%23fed7aa'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='20'>Contrast Filter</text></svg>" alt="Contrast Example">
+        <figcaption>CSS Filter: contrast(200%)</figcaption>
+      </figure>
+
+      <!-- Image 6: Hue-Rotate -->
+      <figure class="filter-card">
+        <img class="filter-huerotate" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='220' viewBox='0 0 300 220'><rect width='300' height='220' fill='%23db2777'/><rect x='70' y='50' width='160' height='120' rx='30' fill='%23f472b6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='20'>Hue Rotate</text></svg>" alt="Hue Rotate Example">
+        <figcaption>CSS Filter: hue-rotate(90deg)</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BridgeLabz Training - Assignment 9 Question 1</p>
+  </footer>
+</body>
+</html>

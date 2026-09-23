@@ -1,0 +1,22 @@
+/* Custom supplementary CSS extending Bootstrap utilities */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Custom button hover transitions */
+.btn-info {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-info:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(13, 202, 240, 0.4);
+}

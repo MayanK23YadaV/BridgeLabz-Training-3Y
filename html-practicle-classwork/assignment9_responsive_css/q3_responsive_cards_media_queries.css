@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  color: #38bdf8;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #94a3b8;
+}
+
+main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Flexbox Row Container */
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Equal spacing between cards requirement */
+  justify-content: center;
+}
+
+/* Desktop: 4 columns requirement */
+.card {
+  flex: 0 0 calc(25% - 1.15rem);
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.5rem; /* Equal padding requirement */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* Background color change transition requirement */
+  transition: background-color 0.35s ease, border-color 0.35s ease, transform 0.3s ease;
+}
+
+/* Background Color Change on Hover Requirement */
+.card:hover {
+  background-color: #0284c7; /* Switches background to blue */
+  border-color: #38bdf8;
+  transform: translateY(-5px);
+}
+
+.card-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #38bdf8;
+  margin-bottom: 0.75rem;
+  background: rgba(56, 189, 248, 0.15);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  width: fit-content;
+  transition: color 0.35s ease, background 0.35s ease;
+}
+
+.card:hover .card-badge {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+  transition: color 0.35s ease;
+}
+
+.card:hover p {
+  color: #f1f5f9;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Tablet (max-width: 900px): 2 columns requirement */
+@media (max-width: 900px) {
+  .card {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+}
+
+/* Mobile (max-width: 600px): 1 column requirement */
+@media (max-width: 600px) {
+  .card {
+    flex: 0 0 100%;
+  }
+}

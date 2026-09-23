@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Principles Summary</title>
+  <link rel="stylesheet" href="q9_responsive_design_principles.css">
+</head>
+<body>
+  <header>
+    <h1>Core Principles of Responsive Design</h1>
+    <p>Essential concepts enabling web pages to render fluidly across device viewports.</p>
+  </header>
+
+  <main>
+    <section class="principles-grid">
+      <!-- Principle 1: Fluid Layouts -->
+      <article class="principle-box">
+        <h2>Fluid Layouts</h2>
+        <p class="definition">Using proportional grid structures based on relative units (%) rather than static fixed pixel widths.</p>
+        <div class="code-block">
+          <code>width: 100%; max-width: 1200px;</code>
+        </div>
+      </article>
+
+      <!-- Principle 2: Flexible Media -->
+      <article class="principle-box">
+        <h2>Flexible Media</h2>
+        <p class="definition">Ensuring images, vectors, and videos scale dynamically within their parent containers without overflowing.</p>
+        <div class="code-block">
+          <code>img { max-width: 100%; height: auto; }</code>
+        </div>
+      </article>
+
+      <!-- Principle 3: Breakpoints -->
+      <article class="principle-box">
+        <h2>Media Breakpoints</h2>
+        <p class="definition">Targeting specific device resolutions using CSS @media conditional rules to adjust flex or grid columns.</p>
+        <div class="code-block">
+          <code>@media (max-width: 600px) { ... }</code>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BridgeLabz Training - Assignment 9 Question 9</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.typography-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  max-width: 800px;
+  width: 100%;
+
+  /* Balanced margins and padding requirement */
+  padding: 3.5rem 2.5rem;
+  margin: 2rem auto;
+  text-align: center; /* Align text centrally requirement */
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Exact Clamp Requirement for h1 */
+h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  color: #38bdf8;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Exact Clamp Requirement for p */
+p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Responsive Requirement: Below 700px adjust line-height and spacing */
+@media (max-width: 700px) {
+  .typography-card {
+    padding: 2rem 1.25rem;
+    margin: 1rem auto;
+  }
+
+  h1 {
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+}

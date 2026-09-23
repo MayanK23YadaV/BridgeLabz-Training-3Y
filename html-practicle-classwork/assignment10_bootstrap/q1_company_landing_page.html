@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Landing Page - Bootstrap 5</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="q1_style.css">
+</head>
+<body class="bg-dark text-light">
+
+  <!-- Header & Navbar using Bootstrap navbar utilities -->
+  <header class="border-bottom border-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+      <div class="container-fluid">
+        <!-- Company Name Logo -->
+        <a class="navbar-brand fw-bold text-info" href="#">🚀 ApexLaunch Startup</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-row navbar-nav ms-auto gap-3">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section using .container, .row, and .col -->
+  <main class="py-5">
+    <section class="container py-5 text-center">
+      <!-- Bootstrap grid row -->
+      <div class="row justify-content-center">
+        <!-- Bootstrap responsive column sizing -->
+        <div class="col-lg-8">
+          <h1 class="display-3 fw-bold text-white mb-3">Scale Your Vision with Next-Gen Tech</h1>
+          <p class="lead text-secondary mb-4">
+            Accelerate product delivery with our cloud-native framework, real-time analytics engine, and enterprise automated workflows.
+          </p>
+          <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+            <!-- Get Started Button -->
+            <button type="button" class="btn btn-info btn-lg px-4 gap-3 fw-bold">Get Started Now</button>
+            <button type="button" class="btn btn-outline-light btn-lg px-4">Watch Demo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 border-top border-secondary text-secondary">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 ApexLaunch Startup - Assignment 10 Question 1</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box-Sizing Comparison Page</title>
+  <link rel="stylesheet" href="q8_style.css">
+</head>
+<body>
+  <header>
+    <h1>Box-Sizing Comparison</h1>
+    <p>Comparing <code>box-sizing: content-box</code> vs <code>box-sizing: border-box</code> with identical width, padding, and border.</p>
+  </header>
+
+  <main>
+    <section class="comparison-container">
+      <!-- Box 1: Default content-box -->
+      <article class="box box-content-box">
+        <h2>Default Box (content-box)</h2>
+        <div class="specs">
+          <p><strong>CSS Width:</strong> 300px</p>
+          <p><strong>Padding:</strong> 30px</p>
+          <p><strong>Border:</strong> 5px</p>
+          <p class="total"><strong>Total Calculated Width:</strong> 370px (300 + 60 + 10)</p>
+        </div>
+        <p class="explanation">
+          In <code>content-box</code>, padding and border are added <em>outside</em> the specified width, making the element physically larger than 300px.
+        </p>
+      </article>
+
+      <!-- Box 2: border-box -->
+      <article class="box box-border-box">
+        <h2>Modern Box (border-box)</h2>
+        <div class="specs">
+          <p><strong>CSS Width:</strong> 300px</p>
+          <p><strong>Padding:</strong> 30px</p>
+          <p><strong>Border:</strong> 5px</p>
+          <p class="total"><strong>Total Calculated Width:</strong> 300px (Exact CSS Width)</p>
+        </div>
+        <p class="explanation">
+          In <code>border-box</code>, padding and border are absorbed <em>inside</em> the specified width, maintaining exact layout dimensions.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BridgeLabz Training - Assignment 8 Question 8</p>
+  </footer>
+</body>
+</html>

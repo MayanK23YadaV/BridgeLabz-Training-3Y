@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Responsive Web Demo</title>
+  <link rel="stylesheet" href="q7_combined_responsive_web_demo.css">
+</head>
+<body>
+  <!-- Header and Navigation using Flexbox -->
+  <header>
+    <div class="brand-logo">🌐 WebCraft</div>
+    <nav class="flex-nav">
+      <a href="#">Gallery</a>
+      <a href="#">Explanation</a>
+      <a href="#">Cheat Sheet</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content Grid with 3 Sections -->
+  <main>
+    <div class="main-grid">
+      <!-- Section 1: Image Gallery -->
+      <section class="grid-card gallery-section">
+        <h2>Responsive Image Gallery</h2>
+        <div class="gallery-row">
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='90' viewBox='0 0 120 90'><rect width='120' height='90' fill='%230284c7'/><circle cx='60' cy='45' r='25' fill='white'/></svg>" alt="Gallery 1">
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='90' viewBox='0 0 120 90'><rect width='120' height='90' fill='%237c3aed'/><circle cx='60' cy='45' r='25' fill='white'/></svg>" alt="Gallery 2">
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='90' viewBox='0 0 120 90'><rect width='120' height='90' fill='%23059669'/><circle cx='60' cy='45' r='25' fill='white'/></svg>" alt="Gallery 3">
+        </div>
+      </section>
+
+      <!-- Section 2: Text Explanation of Responsive Design -->
+      <section class="grid-card explanation-section">
+        <h2>Responsive Design Core</h2>
+        <p>Responsive web design creates web applications that adapt gracefully across mobile, tablet, and desktop viewports using CSS Grid, Flexbox, media queries, and fluid typography.</p>
+      </section>
+
+      <!-- Section 3: Cheat Sheet Preview -->
+      <section class="grid-card cheatsheet-section">
+        <h2>Cheat Sheet Quick Rules</h2>
+        <ul>
+          <li><code>display: grid</code> - 2D layout engine</li>
+          <li><code>display: flex</code> - 1D direction alignment</li>
+          <li><code>@media</code> - Viewport breakpoint styling</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer with Contact Info -->
+  <footer>
+    <p>Contact Us: <a href="mailto:support@webcraft.io">support@webcraft.io</a> | +1 (800) 555-0199</p>
+    <p>&copy; 2026 BridgeLabz Training - Assignment 9 Question 7</p>
+  </footer>
+</body>
+</html>

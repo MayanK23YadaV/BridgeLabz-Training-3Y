@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  color: #38bdf8;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #94a3b8;
+}
+
+main {
+  flex: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Two images displayed side-by-side on desktop requirement */
+.comparison-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.comparison-card {
+  flex: 1;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right image CSS filter applied requirement */
+.filtered-img {
+  filter: contrast(180%) sepia(80%) brightness(110%);
+  /* Smooth filter removal transition requirement */
+  transition: filter 0.5s ease-in-out;
+}
+
+/* On hover, filter fades away smoothly requirement */
+.filtered-img:hover {
+  filter: none;
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.badge-before {
+  background: rgba(2, 132, 199, 0.9);
+  color: white;
+}
+
+.badge-after {
+  background: rgba(234, 179, 8, 0.9);
+  color: #0f172a;
+}
+
+figcaption {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Below 700px, stack both images vertically with captions requirement */
+@media (max-width: 700px) {
+  .comparison-flex {
+    flex-direction: column;
+  }
+}

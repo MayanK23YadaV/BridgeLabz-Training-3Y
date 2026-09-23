@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini User Interface Layout</title>
+  <link rel="stylesheet" href="q10_style.css">
+</head>
+<body>
+  <!-- Header Requirement -->
+  <header>
+    <div class="logo">
+      <span class="logo-icon">⚡</span>
+      <span class="logo-title">BridgeLabz Portal</span>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#" class="active-link">Profile</a>
+    </nav>
+  </header>
+
+  <!-- Main Content Card Requirement -->
+  <main>
+    <div class="main-card">
+      <div class="card-left">
+        <!-- Small Image Requirement -->
+        <img class="avatar-img" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'><rect width='150' height='150' fill='%230284c7'/><circle cx='75' cy='55' r='30' fill='white'/><path d='M25,130 C25,95 125,95 125,130 Z' fill='white'/></svg>" alt="User Profile">
+        <h3>Alex Morgan</h3>
+        <p class="role">Frontend Developer</p>
+      </div>
+
+      <div class="card-right">
+        <!-- Form Requirement -->
+        <form class="user-form" action="#" method="post">
+          <div class="form-group">
+            <label for="username">User Name</label>
+            <input type="text" id="username" value="alex_morgan" placeholder="Enter username">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" value="alex@example.com" placeholder="Enter email">
+          </div>
+
+          <div class="form-group">
+            <label for="bio">Short Bio</label>
+            <textarea id="bio" rows="3" placeholder="Tell us about yourself...">Building elegant responsive interfaces.</textarea>
+          </div>
+
+          <!-- Buttons Requirement -->
+          <div class="form-buttons">
+            <button type="submit" class="btn btn-save">Save Profile</button>
+            <button type="reset" class="btn btn-cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Requirement -->
+  <footer>
+    <p>&copy; 2026 BridgeLabz Training - Assignment 8 Question 10</p>
+  </footer>
+</body>
+</html>

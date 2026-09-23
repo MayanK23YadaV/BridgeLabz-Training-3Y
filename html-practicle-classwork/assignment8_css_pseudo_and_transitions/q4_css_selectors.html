@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Practice Page</title>
+  <link rel="stylesheet" href="q4_style.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Selectors Practice & Demonstration</h1>
+    <p>Visual demonstration of element, class, ID, attribute, and combinator selectors.</p>
+  </header>
+
+  <main>
+    <!-- Element Selector Section -->
+    <section>
+      <h2>Element Selector Example</h2>
+      <p>All paragraphs in this section inherit styling applied directly to the <code>p</code> element selector.</p>
+    </section>
+
+    <!-- Class & ID Selectors Section -->
+    <section>
+      <h2>Class & ID Selectors</h2>
+      <p class="highlight-class">This paragraph uses the <code>.highlight-class</code> selector (teal border & tint).</p>
+      <p id="unique-id">This paragraph uses the <code>#unique-id</code> selector (purple background).</p>
+    </section>
+
+    <!-- Attribute Selectors Section -->
+    <section>
+      <h2>Attribute Selectors</h2>
+      <a href="https://example.com" target="_blank">External Link (target="_blank")</a>
+      <a href="/internal">Internal Link</a>
+      <input type="text" placeholder="Text Input">
+      <input type="password" placeholder="Password Input">
+    </section>
+
+    <!-- Combinators Section -->
+    <section class="combinators-container">
+      <h2>Combinator Selectors</h2>
+      
+      <!-- Descendant Selector -->
+      <div class="parent-box">
+        <p>Direct child paragraph.</p>
+        <div class="nested-box">
+          <p>Descendant paragraph inside nested-box (Selected by descendant <code>.parent-box p</code>).</p>
+        </div>
+      </div>
+
+      <!-- Child Selector (>) -->
+      <ul class="direct-child-list">
+        <li>Direct List Item 1 (Selected by <code>.direct-child-list > li</code>)</li>
+        <li>
+          Direct List Item 2
+          <ul>
+            <li>Sub Item (Not matched by direct child selector)</li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Adjacent Sibling (+) & General Sibling (~) -->
+      <div class="sibling-demo">
+        <h3 class="reference-heading">Reference Heading</h3>
+        <p>Adjacent Sibling (Selected by <code>h3 + p</code> - immediate next sibling).</p>
+        <p>General Sibling 1 (Selected by <code>h3 ~ p</code>).</p>
+        <p>General Sibling 2 (Selected by <code>h3 ~ p</code>).</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BridgeLabz Training - Assignment 8 Question 4</p>
+  </footer>
+</body>
+</html>

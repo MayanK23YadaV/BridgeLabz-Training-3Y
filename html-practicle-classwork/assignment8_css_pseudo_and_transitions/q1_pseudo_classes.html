@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Pseudo-Classes Demo</title>
+  <link rel="stylesheet" href="q1_style.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Pseudo-Classes Demonstration</h1>
+    <p>Interactive examples of <code>:hover</code>, <code>:focus</code>, <code>:active</code>, and <code>:nth-child()</code>.</p>
+  </header>
+
+  <main>
+    <section class="flex-row">
+      <!-- Hover Example -->
+      <article class="card">
+        <a href="#" class="demo-link">Hover Me</a>
+        <div class="explanation">
+          <h3>:hover</h3>
+          <p>Triggers when the mouse pointer hovers over an element. The link turns teal with a smooth transition.</p>
+        </div>
+      </article>
+
+      <!-- Focus Example -->
+      <article class="card">
+        <input type="text" placeholder="Click to Focus" class="demo-input">
+        <div class="explanation">
+          <h3>:focus</h3>
+          <p>Applies when an input receives keyboard/mouse focus. Highlights the border with a blue glow.</p>
+        </div>
+      </article>
+
+      <!-- Active Example -->
+      <article class="card">
+        <button class="demo-btn">Click & Hold</button>
+        <div class="explanation">
+          <h3>:active</h3>
+          <p>Triggers while the element is actively being pressed down. Shrinks and changes to darker blue.</p>
+        </div>
+      </article>
+
+      <!-- Nth-Child Example -->
+      <article class="card">
+        <ul class="demo-list">
+          <li>Item 1 (Odd)</li>
+          <li>Item 2 (Even)</li>
+          <li>Item 3 (Odd)</li>
+          <li>Item 4 (Even)</li>
+        </ul>
+        <div class="explanation">
+          <h3>:nth-child()</h3>
+          <p>Selects elements based on their index. Odd items are highlighted with a purple tint.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BridgeLabz Training - Assignment 8 Question 1</p>
+  </footer>
+</body>
+</html>

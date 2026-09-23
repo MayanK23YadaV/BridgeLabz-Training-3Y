@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive CSS Cheat Sheet</title>
+  <link rel="stylesheet" href="q6_responsive_css_cheat_sheet.css">
+</head>
+<body>
+  <header>
+    <h1>Responsive CSS Cheat Sheet</h1>
+    <p>A handy quick-reference guide for essential responsive CSS features.</p>
+  </header>
+
+  <main>
+    <section class="cheatsheet-grid">
+      <!-- Box 1: Filters -->
+      <article class="sheet-box">
+        <h2 class="key-heading">CSS Filters</h2>
+        <div class="value-content">
+          <p>Applies visual graphic effects like blur, sepia, or color shifts to elements.</p>
+          <code>filter: grayscale(100%) blur(2px);</code>
+        </div>
+      </article>
+
+      <!-- Box 2: Media Queries -->
+      <article class="sheet-box">
+        <h2 class="key-heading">Media Queries</h2>
+        <div class="value-content">
+          <p>Executes conditional CSS rules based on screen widths or device features.</p>
+          <code>@media (max-width: 768px) { ... }</code>
+        </div>
+      </article>
+
+      <!-- Box 3: Responsive Design -->
+      <article class="sheet-box">
+        <h2 class="key-heading">Responsive Layout</h2>
+        <div class="value-content">
+          <p>Utilizes CSS Grid and Flexbox for fluid proportioning across viewports.</p>
+          <code>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</code>
+        </div>
+      </article>
+
+      <!-- Box 4: Typography -->
+      <article class="sheet-box">
+        <h2 class="key-heading">Fluid Typography</h2>
+        <div class="value-content">
+          <p>Scales font sizes smoothly between minimum and maximum boundaries.</p>
+          <code>font-size: clamp(1rem, 2.5vw, 2rem);</code>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BridgeLabz Training - Assignment 9 Question 6</p>
+  </footer>
+</body>
+</html>

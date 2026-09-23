@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter Comparison Layout</title>
+  <link rel="stylesheet" href="q8_filter_comparison_layout.css">
+</head>
+<body>
+  <header>
+    <h1>Before & After Image Filter Comparison</h1>
+    <p>Compare original image (Left) vs filtered image (Right). Hover over the filtered image to reveal the original view!</p>
+  </header>
+
+  <main>
+    <section class="comparison-flex">
+      <!-- Left Image: Original / Before -->
+      <figure class="comparison-card">
+        <div class="img-container">
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%230284c7'/><circle cx='200' cy='150' r='80' fill='%2338bdf8'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='26'>Original Photo</text></svg>" alt="Original Photo">
+          <span class="badge badge-before">Before (Original)</span>
+        </div>
+        <figcaption>Original Image - Standard Contrast & Hue</figcaption>
+      </figure>
+
+      <!-- Right Image: Filter Applied / After -->
+      <figure class="comparison-card">
+        <div class="img-container">
+          <img class="filtered-img" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%230284c7'/><circle cx='200' cy='150' r='80' fill='%2338bdf8'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='26'>Filtered Photo</text></svg>" alt="Filtered Photo">
+          <span class="badge badge-after">After (CSS Filtered)</span>
+        </div>
+        <figcaption>Filtered Image - High Contrast & Sepia (Hover to remove filter)</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BridgeLabz Training - Assignment 9 Question 8</p>
+  </footer>
+</body>
+</html>

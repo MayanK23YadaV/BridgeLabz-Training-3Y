@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  color: #38bdf8;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #94a3b8;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+
+/* Flexbox Container for Items */
+.tooltip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background: #1e293b;
+  padding: 3rem;
+  border-radius: 16px;
+  border: 1px solid #334155;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Individual Tooltip Target */
+.tooltip-item {
+  position: relative;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  background: #334155;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.tooltip-item:hover {
+  background: #0284c7;
+}
+
+.icon {
+  font-size: 1.8rem;
+}
+
+.word {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+/* Pure CSS Tooltip Styling */
+.tooltip-text {
+  position: absolute;
+  bottom: 125%; /* Positioned above element */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0f172a;
+  color: #e2e8f0;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  border: 1px solid #38bdf8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+
+  /* Opacity transition requirement */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+/* Arrow indicator */
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #38bdf8 transparent transparent transparent;
+}
+
+/* Reveal on hover */
+.tooltip-item:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+}

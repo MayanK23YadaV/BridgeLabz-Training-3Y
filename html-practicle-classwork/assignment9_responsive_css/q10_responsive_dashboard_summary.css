@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+/* Dashboard Container CSS Grid Requirement */
+.dashboard-grid {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+
+  /* Keyframe load animation requirement */
+  animation: dashLoad 0.8s ease-in-out forwards;
+}
+
+/* Header */
+.dash-header {
+  grid-area: header;
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dash-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.dash-user {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* Sidebar */
+.dash-sidebar {
+  grid-area: sidebar;
+  background: #0f172a;
+  border-right: 1px solid #334155;
+  padding: 2rem 1rem;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.side-nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.side-nav a:hover,
+.side-nav a.active {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+}
+
+/* Main Content */
+.dash-main {
+  grid-area: main;
+  padding: 2rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Dashboard Cards */
+.dash-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+  /* Hover scale up slightly with shadow effect requirement */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.dash-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 25px rgba(56, 189, 248, 0.25);
+  border-color: #38bdf8;
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.dash-card h3 {
+  color: #38bdf8;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.dash-card p {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+.dash-footer {
+  grid-area: footer;
+  background: #1e293b;
+  border-top: 1px solid #334155;
+  text-align: center;
+  padding: 1rem;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+/* Load Animation Keyframes */
+@keyframes dashLoad {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Below 750px, sidebar shifts to top and content stacks below it requirement */
+@media (max-width: 750px) {
+  .dashboard-grid {
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .dash-sidebar {
+    border-right: none;
+    border-bottom: 1px solid #334155;
+    padding: 1rem;
+  }
+
+  .side-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
